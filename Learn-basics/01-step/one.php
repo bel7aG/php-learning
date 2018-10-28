@@ -1,6 +1,6 @@
   <?php
     echo "<h1>Hello echo</h1>";
-    print("<p class='print'>print can print xD</p>");
+    print("<h2 class='print'>print can print xD</h2>");
     //comment  #comment
     /*
       multi line..
@@ -22,15 +22,14 @@
     # ==> all keywords (e.g. if, else, while, echo, etc.),
     #     classes, functions, and user-defined functions are NOT case-sensitive.
 
-    $me = 1;
+    $me = 2;
     $Me = 2;
-    $a = $me == $Me ? '$me == $Me' : '$me != $Me <br />';
-    echo $a;
+    echo ($me == $Me ? '$me == $Me' : '$me != $Me <br />');
 
     //variables
     $a = 2;
     $b = 2;
-    echo $a + $b . '<br />';
+    echo '<br />' . ($a + $b) . '<br />';
     print $a + $b;
     printf("<br /><br /> %d + %d = %d", $a, $b, $a + $b);
 
@@ -65,7 +64,7 @@
     $func = function() {
       echo 'this is $func';
     };
-
+    echo $func();
     echo "<hr> boolean test: <br />";
 
     if (1 == '1') {
@@ -127,7 +126,7 @@
       echo '<br />' . $k;
     }
 
-    
+
     $mystr = 'belhassen Gharsallah is a Javascript developer not this shit ..';
     echo '<br />' . (is_string($mystr) ? 'true' : 'not string');
         #is_string()
@@ -136,5 +135,7 @@
         #is_float()
         #is_integer()
         #is_object()
+    echo "<br /><br /><br />" . is_array($_POST); //true
+    echo "<br /><br /><br />" . is_array($GLOBALS);    //true
 
   ?>
