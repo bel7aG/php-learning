@@ -4,6 +4,12 @@
   <meta charset="UTF-8">
   <title></title>
   <link rel="stylesheet" href="css/main.css">
+  <style>
+    tr:last-child td {
+      background-color: red;
+      position: absolute;
+    }
+  </style>
 </head>
 
 <body>
@@ -24,7 +30,7 @@
             $myLine="\n";
             for ($k=1; $k < count($_POST); $k++) {
                 if ($k == (count($_POST) - 1)) {
-                  $myLine .= $_POST["input".$k];
+                  $myLine .= $_POST["input".$k] . "|";
                 } else {
                   $myLine .= $_POST["input".$k]."|";
                 }
@@ -36,15 +42,28 @@
             $contenu= file_get_contents("myFile.txt");
             $tab=explode("|", $contenu);
             echo("<table border=2px><tr>");
-            $i = 0;
-            echo("<th>Numéro de Commande</th><th>Numero Client</th><th>Date de Commande</th><th>Designation article</th><th>Quantité</th><th>Prix Unitaire</th></tr><tr>");
-            $meme = 1;
+            echo(
+              "<th>Numéro de Commande</th>
+              <th>Numero Client</th>
+              <th>Date de Commande</th>
+              <th>Designation article</th>
+              <th>Quantité</th>
+              <th>Prix Unitaire</th>
+              </tr><tr>"
+            );
+            $finish = 1;
+            $isFinish = $finish;
+            $i = 1;
+            $k = true;
             foreach($tab as $val) {
-                if ((($i % 6) == 0)) {
-                    echo("</tr><tr>");
-                }
+              if ((($i % 6) != 0)) {
                 echo ("<td>".$val."</td>");
                 $i++;
+              } else {
+                echo ("<td>".$val."</td>");
+                echo("</tr>");
+                $i = 1;
+              }
             }
             echo ("</tr><table>");
         }

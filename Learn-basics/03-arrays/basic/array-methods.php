@@ -83,6 +83,31 @@
     foreach ($arrayOfSum as $key => $data) {
       echo $key . "==> " . $data . "  |  ";
     }
+
+    //in_array(element, array);
+    $message = in_array("bel7aG", $arrayOfSum) ? ("<br />" . "bel7aG is there") : ("not exist");
+    echo $message;
+
+    //array_reverse(array, true);
+    echo "<br />";
+    print_r(array_reverse($arrayOfSum));
+    echo "<br />";
+    print_r(($arrayOfSum));
+
+    #sort(Array, typeOfSort);
+        #==> about typeOfSort ==> SORT_STRING | SORT_NUMERIC | (SORT_REGULAR ==> ASCII CODE)
+
+    $sArray = array(10, 20, 1, 3, 44, 99, 0, -33, "2");
+    echo "<br /><br /><br />";
+    print_r($sArray);
+
+    sort($sArray, SORT_NUMERIC);
+    echo "<br /><br /><br />";
+    print_r($sArray);
+
+
+
+
   ?>
 </body>
 </html>
