@@ -1,0 +1,15 @@
+202005001 | 1236 | 20 octobre 2008 | Tomates | 4 | 4.0
+202005001 | 1236 | 21 octobre 2008 | Tomates | 6 | 3.5
+202005001 | 1236 | 21 octobre 2008 | Tomates | 6 | 3.5
+202005001 | 1236 | 20 octobre 2008 | Tomates | 4 | 4.0
+202005001 | 1236 | 21 octobre 2008 | Tomates | 6 | 3.5
+202005001 | 1236 | 21 octobre 2008 | Tomates | 6 | 3.5
+202005001 | 1236 | 20 octobre 2008 | Tomates | 4 | 4.0
+202005001 | 1236 | 21 octobre 2008 | Tomates | 6 | 3.5
+202005001 | 1236 | 21 octobre 2008 | Tomates | 6 | 3.5
+202005001 | 1236 | 20 octobre 2008 | Tomates | 4 | 4.0
+202005001 | 1236 | 21 octobre 2008 | Tomates | 6 | 3.5
+202005001 | 1236 | 21 octobre 2008 | Tomates | 6 | 3.5
+202005001 | 1236 | 20 octobre 2008 | Tomates | 4 | 4.0
+202005001 | 1236 | 21 octobre 2008 | Tomates | 6 | 3.5
+202005001 | 1236 | 21 octobre 2008 | Tomates | 6 | 3.5
