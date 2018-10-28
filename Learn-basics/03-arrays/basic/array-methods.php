@@ -63,7 +63,6 @@
       echo "<br />" . $key . "==> " . $data;
     }
 
-
     $arrayOfSum = array_filter($arrayOfSum, function($element) {
       return is_integer($element);
     });
@@ -72,7 +71,7 @@
       return $element * 2000;
     }, $arrayOfSum);
 
-    
+
     echo "<br /><br />";
 
     foreach ($arrayOfSum as $key => $data) {
@@ -84,8 +83,6 @@
     foreach ($arrayOfSum as $key => $data) {
       echo $key . "==> " . $data . "  |  ";
     }
-
-
   ?>
 </body>
 </html>
