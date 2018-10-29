@@ -10,10 +10,10 @@
   <?php
     $fileOne = fopen("commande.txt", "a+");
 
-    $fileArray = file("commande.txt");
     fwrite($fileOne, "202005001 | 1236 | 20 octobre 2008 | Tomates | 4 | 4.0\n");
     fwrite($fileOne, "202005001 | 1236 | 21 octobre 2008 | Tomates | 6 | 3.5\n");
     fwrite($fileOne, "202005001 | 1236 | 21 octobre 2008 | Tomates | 6 | 3.5\n");
+    $fileArray = file("commande.txt");
 
     foreach ($fileArray as $value) {
         echo nl2br($value);
