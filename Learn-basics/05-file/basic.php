@@ -76,11 +76,11 @@
     //read the file and get the contents in an array
     $openFileOne = fopen("basicFileOne.txt", "a");
     $fileThreeArray = file("basicFileOne.txt");
+    $o = fgets($openFileOne);
 
     foreach($fileThreeArray as $line) {
       echo $line . "<br /><br /><br />";
     }
-
 
 
 
